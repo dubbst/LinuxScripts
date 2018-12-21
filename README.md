@@ -2,6 +2,8 @@
 Scripts used in my Linux work - KVM, Shred, etc
 Mostly to host KVM build scripts that worked and useful commands from previous and current jobs.  Possibly FOG installation and troubleshooting.
 
+A good step by step guide for running windows 10 on linux kvm with vga passthrough:
+https://heiko-sieger.info/running-windows-10-on-linux-using-kvm-with-vga-passthrough/
 # Correct wrong parameters/information
 # Insert relevant info in {} braces
 
