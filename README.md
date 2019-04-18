@@ -36,6 +36,23 @@ sudo virt-install \
 --graphics vnc \
 --disk path=/var/lib/libvirt/images/windows10.qcow2,size=80,bus=virtio,format=qcow2
 
+#Manjaro:
+sudo virt-install \
+--virt-type=kvm \
+--name manjaro \
+--ram 2048 \
+--vcpus=2 \
+--os-variant=archlinux \
+--virt-type=kvm \
+--hvm \
+--cdrom=/var/lib/libvirt/boot/manjaro-xfce-18.0.4-stable-x86_64.iso \
+--network=bridge=virbr0,model=virtio \
+--graphics vnc \
+--disk path=/var/lib/libvirt/images/manjaro.qcow2,size=40,bus=virtio,format=qcow2
+
+Manjaro iso download link:
+https://osdn.net/dl/manjaro/manjaro-xfce-18.0.4-stable-x86_64.iso
+
 # UbuntuMATE:
 sudo virt-install \
 --virt-type=kvm \
